@@ -3,10 +3,10 @@ import pickle
 import numpy as np
 import os
 
-# ---------------- PAGE CONFIG ----------------
+
 st.set_page_config(page_title="Loan DSS", layout="wide")
 
-# ---------------- DARK THEME ----------------
+
 st.markdown("""
     <style>
     .stApp {
@@ -19,17 +19,16 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# ---------------- LOAD MODEL ----------------
+
 model_path = os.path.join(os.path.dirname(__file__), "..", "loan_model.pkl")
 model = pickle.load(open(model_path, "rb"))
 
-# ---------------- HEADER ----------------
 st.markdown("<h1 style='text-align: center;'>🏦 Loan Risk Dashboard</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'> Loan Decision Support System</p>", unsafe_allow_html=True)
 
 st.divider()
 
-# ---------------- SIDEBAR INPUTS ----------------
+
 st.sidebar.header("📊 Applicant Inputs")
 
 income = st.sidebar.number_input("💰 Income", min_value=1)
@@ -39,10 +38,10 @@ interest = st.sidebar.number_input("📈 Interest Rate", min_value=0.0)
 emp_years = st.sidebar.number_input("💼 Employment Years", min_value=0)
 credit_hist_years = st.sidebar.number_input("📚 Credit History Length", min_value=0)
 
-# ---------------- MAIN ----------------
+
 if st.sidebar.button("🚀 Analyze Risk"):
 
-    # Create feature
+   
     loan_to_income = loan / (income + 1)
 
     input_data = np.array([[
