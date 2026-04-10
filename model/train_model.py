@@ -60,7 +60,7 @@ accuracy = accuracy_score(y_test, predictions)
 
 print("Model Accuracy:", accuracy)
 
-# Save model
+
 pickle.dump(model, open("loan_model.pkl", "wb"))
 
 print("Model saved as loan_model.pkl ✅")
