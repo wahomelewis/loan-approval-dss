@@ -30,12 +30,16 @@ Decision Criteria:
 System Architecture
 Using a dataset that has all the relevant information such as credit scores and employment status 
 The decision engine will utilize a predictive model such as regression to calculate the probability of defaulting. In addition, it will also incorporate a rule-based inference engine to make sure strict bank policies are followed such as, if age < 18, reject immediately.
-For presentation, a Python-based application (Streamlit / Flask / Tkinter) will be used as the user interface to display all the necessary information.
+For presentation, a Python-based application Streamlit will be used as the user interface to display all the necessary information.
  
+<img width="1447" height="1061" alt="Screenshot 2026-04-10 094037" src="https://github.com/user-attachments/assets/6951a8a1-56a6-4d55-9ea9-ff977943f475" />
+<img width="1230" height="1023" alt="Screenshot 2026-04-10 094053" src="https://github.com/user-attachments/assets/7d297bf3-3a43-445d-b61c-3079a477441e" />
+<img width="1351" height="989" alt="Screenshot 2026-04-10 094146" src="https://github.com/user-attachments/assets/0350e39f-3df8-4978-9ca8-7bfdf4819cc1" />
 
+<img width="1546" height="802" alt="image" src="https://github.com/user-attachments/assets/5d5903d2-217d-440c-8866-58f20fa1c077" />
 
-Theo Wabwire 671398
-Lewis Wahome 671032
+Theo Wabwire 671398 - Data Cleaning and EDA
+Lewis Wahome 671032 - Model and system development
 
 
 
